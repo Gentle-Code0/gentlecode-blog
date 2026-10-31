@@ -2,3 +2,15 @@ baseURL = 'https://gentlecode.wanwanma.com.cn/'
 locale = 'zh-cn'
 title = "GentleCode's blog"
 theme = 'ananke'
+
+[[menus.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menus.main]]
+  identifier = "writing"
+  name = "Writing"
+  url = "/posts/"
+  weight = 20
