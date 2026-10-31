@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <article class="pa3 pa4-ns">
+    <div class="measure-wide center">
+      <div class="nested-copy-line-height lh-copy">
+        {{ .Content }}
+      </div>
+
+      <ul class="list pl0">
+        {{ range .RegularPages.ByDate.Reverse }}
+          <li class="pv3 bb b--black-10">
+            <time
+              class="db f6 gray mb2"
+              datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "2006-01-02" }}
+            </time>
+            <a class="f4 link dark-blue" href="{{ .RelPermalink }}">
+              {{ .Title }}
+            </a>
+          </li>
+        {{ else }}
+          <li class="pv3 gray">暂时还没有文章。</li>
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+{{ end }}

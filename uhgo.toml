@@ -1,0 +1,11 @@
+[[menus.main]]
+  identifier = "home"
+  name = "首页"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  identifier = "posts"
+  name = "文章"
+  pageRef = "/posts"
+  weight = 20
