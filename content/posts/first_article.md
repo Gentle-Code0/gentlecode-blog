@@ -1,7 +1,7 @@
 +++
 date = '2026-10-30T15:39:08Z'
 draft = false
-title = 'first article'
+title = '第一篇文章，本博客开始的契机'
 +++
 
 ### 第一篇文章，本博客开始的契机
